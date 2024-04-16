@@ -12,6 +12,7 @@ contracts:
     events:
       - event: ModuleInstalled(uint256 moduleTypeId, address mod)
       - event: ModuleUninstalled(uint256 moduleTypeId, address mod)
+      - event: RootValidatorUpdated(bytes21 rootValidator)
 networks:
   - id: 1
     start_block: 19274877
