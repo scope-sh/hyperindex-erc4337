@@ -20,6 +20,7 @@ KernelV3AccountContract.ModuleInstalled.handler(({ event, context }) => {
     id: `${event.chainId}-${accountAddress}`,
     modules,
     chainId: account.chainId,
+    rootValidator: account.rootValidator,
     address: account.address,
   });
 });
@@ -44,6 +45,7 @@ KernelV3AccountContract.ModuleUninstalled.handler(({ event, context }) => {
     id: `${event.chainId}-${accountAddress}`,
     modules,
     chainId: account.chainId,
+    rootValidator: account.rootValidator,
     address: account.address,
   });
 });

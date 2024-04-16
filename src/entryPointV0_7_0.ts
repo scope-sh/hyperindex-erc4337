@@ -19,6 +19,7 @@ EntryPointV0_7_0Contract.AccountDeployed.handler(({ event, context }) => {
       id: `${event.chainId}-${address}`,
       chainId: event.chainId,
       address,
+      rootValidator: undefined,
       modules: [],
     });
   }
