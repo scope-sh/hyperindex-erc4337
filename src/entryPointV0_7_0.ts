@@ -1,6 +1,6 @@
 import { EntryPointV0_7_0Contract } from "../generated/src/Handlers.gen";
 
-const KERNEL_V3_FACTORY_ADDRESS = "0xd703aae79538628d27099b8c4f621be4ccd142d5";
+const KERNEL_V3_FACTORY_ADDRESS = "0xd703aaE79538628d27099B8c4f621bE4CCd142d5";
 
 EntryPointV0_7_0Contract.AccountDeployed.loader(({ event, context }) => {
   const address = event.params.sender;
