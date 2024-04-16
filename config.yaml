@@ -1,0 +1,65 @@
+name: ERC7579 Indexer
+description: ERC7579 Account and Module Indexer
+contracts:
+  - name: EntryPointV0_7_0
+    abi_file_path: ./abi/entryPointV0_7_0.json
+    handler: ./src/entryPointV0_7_0.ts
+    events:
+      - event: AccountDeployed(bytes32 indexed userOpHash, address indexed sender, address factory, address paymaster)
+  - name: KernelV3Account
+    abi_file_path: ./abi/kernelV3Account.json
+    handler: ./src/kernelV3Account.ts
+    events:
+      - event: ModuleInstalled(uint256 moduleTypeId, address mod)
+      - event: ModuleUninstalled(uint256 moduleTypeId, address mod)
+networks:
+  - id: 1
+    start_block: 19274877
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 11155111
+    start_block: 5328753
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 10
+    start_block: 116453058
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 11155420
+    start_block: 8448043
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 137
+    start_block: 53784988
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 80002
+    hypersync_config:
+      endpoint_url: "https://amoy.hypersync.xyz"
+    start_block: 4286963
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 8453
+    start_block: 10920348
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
+  - id: 84532
+    start_block: 6556474
+    contracts:
+      - name: EntryPointV0_7_0
+        address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
+      - name: KernelV3Account
