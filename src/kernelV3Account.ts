@@ -28,7 +28,6 @@ KernelV3AccountContract.RootValidatorUpdated.handler(({ event, context }) => {
       address: account.address,
     });
   } else if (validatorType === TYPE_PERMISSION) {
-    // TODO
     return;
   }
 });
