@@ -61,6 +61,7 @@ function handleAccountDeployed(
   context.AccountDeployed.set({
     id: `${event.chainId}-${address}`,
     chainId: event.chainId,
+    blockNumber: event.blockNumber,
     txHash: event.transactionHash,
     factory,
     paymaster: event.params.paymaster.toLowerCase(),
@@ -101,9 +102,10 @@ function handleUserOperationEvent(
   const address = event.params.sender.toLowerCase();
   context.UserOp.set({
     id: `${event.chainId}-${address}`,
-    hash: event.params.userOpHash,
     chainId: event.chainId,
+    blockNumber: event.blockNumber,
     txHash: event.transactionHash,
+    hash: event.params.userOpHash,
     actualGasCost: event.params.actualGasCost,
     actualGasUsed: event.params.actualGasUsed,
     nonce: event.params.nonce,

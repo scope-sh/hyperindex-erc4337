@@ -8,9 +8,10 @@ type KernelV3Account {
 
 type UserOp {
   id: ID!
-  hash: String!
-  txHash: String!
   chainId: Int!
+  blockNumber: Int!
+  txHash: String!
+  hash: String!
   actualGasCost: BigInt!
   actualGasUsed: BigInt!
   nonce: BigInt!
@@ -23,6 +24,7 @@ type UserOp {
 type AccountDeployed {
   id: ID!
   chainId: Int!
+  blockNumber: Int!
   txHash: String!
   factory: String!
   paymaster: String!
