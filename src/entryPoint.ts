@@ -99,18 +99,18 @@ function handleUserOperationEvent(
   event: eventLog<EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs>,
   context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext
 ) {
-  const address = event.params.sender.toLowerCase();
+  const hash = event.params.userOpHash;
   context.UserOp.set({
-    id: `${event.chainId}-${address}`,
+    id: `${event.chainId}-${hash}`,
     chainId: event.chainId,
     blockNumber: event.blockNumber,
     txHash: event.transactionHash,
-    hash: event.params.userOpHash,
+    hash,
     actualGasCost: event.params.actualGasCost,
     actualGasUsed: event.params.actualGasUsed,
     nonce: event.params.nonce,
     paymaster: event.params.paymaster.toLowerCase(),
-    sender: address,
+    sender: event.params.sender.toLowerCase(),
     success: event.params.success,
     entryPoint: event.srcAddress.toLowerCase(),
   });
