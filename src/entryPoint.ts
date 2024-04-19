@@ -32,7 +32,6 @@ function loadAccountDeployed(
     context.KernelV3Account.load(`${event.chainId}-${address}`);
     context.contractRegistration.addKernelV3Account(address);
   }
-  context.AccountDeployed.load(`${event.chainId}-${address}`);
 }
 
 EntryPointV0_6_0Contract.AccountDeployed.handler(({ event, context }) => {
@@ -58,17 +57,6 @@ function handleAccountDeployed(
       modules: [],
     });
   }
-  context.AccountDeployed.set({
-    id: `${event.chainId}-${address}`,
-    chainId: event.chainId,
-    blockNumber: event.blockNumber,
-    txHash: event.transactionHash,
-    factory,
-    paymaster: event.params.paymaster.toLowerCase(),
-    sender: address,
-    userOpHash: event.params.userOpHash,
-    entryPoint: event.srcAddress.toLowerCase(),
-  });
 }
 
 EntryPointV0_6_0Contract.UserOperationEvent.loader(({ event, context }) => {
@@ -83,8 +71,8 @@ function loadUserOperationEvent(
   event: eventLog<EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs>,
   context: EntryPointV0_6_0Contract_UserOperationEventEvent_loaderContext
 ) {
-  const address = event.params.sender.toLowerCase();
-  context.AccountDeployed.load(`${event.chainId}-${address}`);
+  const hash = event.params.userOpHash;
+  context.UserOp.load(`${event.chainId}-${hash}`);
 }
 
 EntryPointV0_6_0Contract.UserOperationEvent.handler(({ event, context }) => {
@@ -102,16 +90,6 @@ function handleUserOperationEvent(
   const hash = event.params.userOpHash;
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
-    chainId: event.chainId,
-    blockNumber: event.blockNumber,
     txHash: event.transactionHash,
-    hash,
-    actualGasCost: event.params.actualGasCost,
-    actualGasUsed: event.params.actualGasUsed,
-    nonce: event.params.nonce,
-    paymaster: event.params.paymaster.toLowerCase(),
-    sender: event.params.sender.toLowerCase(),
-    success: event.params.success,
-    entryPoint: event.srcAddress.toLowerCase(),
   });
 }
