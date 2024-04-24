@@ -8,7 +8,6 @@ import {
   EntryPointV0_6_0Contract_AccountDeployedEvent_loaderContext,
   EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs,
   EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext,
-  EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContextAsync,
   EntryPointV0_6_0Contract_UserOperationEventEvent_loaderContext,
   eventLog,
 } from "../generated/src/Types.gen";
