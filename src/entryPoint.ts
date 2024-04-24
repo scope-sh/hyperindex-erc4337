@@ -76,21 +76,17 @@ function loadUserOperationEvent(
   context.UserOp.load(`${event.chainId}-${hash}`);
 }
 
-EntryPointV0_6_0Contract.UserOperationEvent.handlerAsync(
-  async ({ event, context }) => {
-    handleUserOperationEvent(event, context);
-  }
-);
+EntryPointV0_6_0Contract.UserOperationEvent.handler(({ event, context }) => {
+  handleUserOperationEvent(event, context);
+});
 
-EntryPointV0_7_0Contract.UserOperationEvent.handlerAsync(
-  async ({ event, context }) => {
-    handleUserOperationEvent(event, context);
-  }
-);
+EntryPointV0_7_0Contract.UserOperationEvent.handler(({ event, context }) => {
+  handleUserOperationEvent(event, context);
+});
 
-async function handleUserOperationEvent(
+function handleUserOperationEvent(
   event: eventLog<EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs>,
-  context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContextAsync
+  context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext
 ) {
   const hash = event.params.userOpHash;
   const bundler = event.txOrigin;
