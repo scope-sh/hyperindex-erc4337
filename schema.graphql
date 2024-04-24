@@ -18,7 +18,7 @@ type UserOp {
   nonce: BigInt!
   bundler: String
   paymaster: String!
-  sender: String!
+  sender: String! @index
   success: Boolean!
   entryPoint: String!
 }
