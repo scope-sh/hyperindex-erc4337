@@ -89,7 +89,7 @@ function handleUserOperationEvent(
   context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext
 ) {
   const hash = event.params.userOpHash;
-  const bundler = event.txOrigin;
+  const bundler = event.txOrigin ? event.txOrigin.toLowerCase() : undefined;
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
     chainId: event.chainId,
