@@ -8,6 +8,7 @@ import {
   EntryPointV0_6_0Contract_AccountDeployedEvent_loaderContext,
   EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs,
   EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext,
+  EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContextAsync,
   EntryPointV0_6_0Contract_UserOperationEventEvent_loaderContext,
   eventLog,
 } from "../generated/src/Types.gen";
@@ -75,21 +76,38 @@ function loadUserOperationEvent(
   context.UserOp.load(`${event.chainId}-${hash}`);
 }
 
-EntryPointV0_6_0Contract.UserOperationEvent.handler(({ event, context }) => {
-  handleUserOperationEvent(event, context);
-});
+EntryPointV0_6_0Contract.UserOperationEvent.handlerAsync(
+  async ({ event, context }) => {
+    handleUserOperationEvent(event, context);
+  }
+);
 
-EntryPointV0_7_0Contract.UserOperationEvent.handler(({ event, context }) => {
-  handleUserOperationEvent(event, context);
-});
+EntryPointV0_7_0Contract.UserOperationEvent.handlerAsync(
+  async ({ event, context }) => {
+    handleUserOperationEvent(event, context);
+  }
+);
 
-function handleUserOperationEvent(
+async function handleUserOperationEvent(
   event: eventLog<EntryPointV0_6_0Contract_UserOperationEventEvent_eventArgs>,
-  context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContext
+  context: EntryPointV0_6_0Contract_UserOperationEventEvent_handlerContextAsync
 ) {
   const hash = event.params.userOpHash;
+  const bundler = event.txOrigin;
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
-    txHash: event.transactionHash,
+    chainId: event.chainId,
+    blockNumber: event.blockNumber,
+    transactionIndex: event.transactionIndex,
+    transactionHash: event.transactionHash,
+    hash,
+    actualGasCost: event.params.actualGasCost,
+    actualGasUsed: event.params.actualGasUsed,
+    nonce: event.params.nonce,
+    bundler,
+    paymaster: event.params.paymaster.toLowerCase(),
+    sender: event.params.sender.toLowerCase(),
+    success: event.params.success,
+    entryPoint: event.srcAddress.toLowerCase(),
   });
 }

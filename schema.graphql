@@ -8,5 +8,17 @@ type KernelV3Account {
 
 type UserOp {
   id: ID!
-  txHash: String!
+  chainId: Int!
+  blockNumber: Int!
+  transactionIndex: Int!
+  transactionHash: String!
+  hash: String!
+  actualGasCost: BigInt!
+  actualGasUsed: BigInt!
+  nonce: BigInt!
+  bundler: String
+  paymaster: String!
+  sender: String!
+  success: Boolean!
+  entryPoint: String!
 }
