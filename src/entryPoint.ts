@@ -90,6 +90,7 @@ function handleUserOperationEvent(
 ) {
   const hash = event.params.userOpHash;
   const bundler = event.txOrigin ? event.txOrigin.toLowerCase() : undefined;
+
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
     chainId: event.chainId,
