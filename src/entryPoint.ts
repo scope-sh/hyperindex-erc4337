@@ -48,6 +48,7 @@ function handleAccountDeployed(
 ) {
   const address = event.params.sender.toLowerCase();
   const factory = event.params.factory.toLowerCase();
+
   if (factory === KERNEL_V3_FACTORY_ADDRESS) {
     context.KernelV3Account.set({
       id: `${event.chainId}-${address}`,
