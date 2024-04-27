@@ -27,6 +27,9 @@ importers:
       '@types/node':
         specifier: 20.8.8
         version: 20.8.8
+      '@types/ws':
+        specifier: ^8.5.10
+        version: 8.5.10
       mocha:
         specifier: 10.2.0
         version: 10.2.0
@@ -331,6 +334,12 @@ packages:
     resolution: {integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==}
     dependencies:
       undici-types: 5.25.3
+    dev: true
+
+  /@types/ws@8.5.10:
+    resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
+    dependencies:
+      '@types/node': 20.8.8
     dev: true
 
   /@types/yoga-layout@1.9.2:
