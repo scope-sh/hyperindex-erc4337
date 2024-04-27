@@ -1,5 +1,5 @@
 {
-  "name": "hyperindex-erc7579",
+  "name": "scope-hyperindex",
   "version": "0.1.0",
   "scripts": {
     "clean": "tsc --clean",
