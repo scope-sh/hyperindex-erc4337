@@ -10,7 +10,7 @@ type UserOp {
   id: ID!
   chainId: Int!
   blockNumber: Int!
-  blockTimestamp: Int!
+  blockTimestamp: Int! @index
   transactionIndex: Int!
   transactionHash: String!
   hash: String!
