@@ -94,6 +94,7 @@ function handleUserOperationEvent(
     id: `${event.chainId}-${hash}`,
     chainId: event.chainId,
     blockNumber: event.blockNumber,
+    blockTimestamp: event.blockTimestamp,
     transactionIndex: event.transactionIndex,
     transactionHash: event.transactionHash,
     hash,
