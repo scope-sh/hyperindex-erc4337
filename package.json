@@ -11,6 +11,9 @@
     "test": "pnpm mocha",
     "start": "ts-node generated/src/Index.bs.js"
   },
+  "workspaces": [
+    "./*"
+  ],
   "devDependencies": {
     "@types/chai": "^4.3.11",
     "@types/mocha": "10.0.6",
