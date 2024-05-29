@@ -62,6 +62,8 @@ networks:
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: KernelV3Account
   - id: 80002
+    hypersync_config:
+      endpoint_url: "https://amoy.hypersync.xyz"
     start_block: 0
     contracts:
       - name: EntryPointV0_6_0
@@ -126,6 +128,8 @@ networks:
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: KernelV3Account
   - id: 7560
+    hypersync_config:
+      endpoint_url: "https://cyber.hypersync.xyz"
     start_block: 0
     contracts:
       - name: EntryPointV0_6_0
