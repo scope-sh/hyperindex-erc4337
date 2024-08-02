@@ -5,10 +5,8 @@
     "clean": "tsc --clean",
     "build": "tsc --build",
     "watch": "tsc --watch",
-    "mocha": "ts-mocha test/**/*.ts",
     "codegen": "envio codegen",
     "dev": "envio dev",
-    "test": "pnpm mocha",
     "start": "ts-node generated/src/Index.bs.js"
   },
   "devDependencies": {
