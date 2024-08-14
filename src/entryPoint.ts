@@ -66,9 +66,9 @@ async function handleUserOperationEvent(
 ) {
   const hash = event.params.userOpHash;
   // @ts-ignore
-  const bundler = event.transaction.sender
+  const bundler = event.transaction.from
     ? // @ts-ignore
-      event.transaction.sender.toLowerCase()
+      event.transaction.from.toLowerCase()
     : undefined;
 
   context.UserOp.set({
@@ -77,7 +77,7 @@ async function handleUserOperationEvent(
     blockNumber: event.block.number,
     blockTimestamp: event.block.timestamp,
     // @ts-ignore
-    transactionIndex: event.transaction.index,
+    transactionIndex: 0,
     // @ts-ignore
     transactionHash: event.transaction.hash,
     hash,
