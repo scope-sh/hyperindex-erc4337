@@ -20,6 +20,11 @@ contracts:
       - event: ModuleInstalled(uint256 moduleTypeId, address mod)
       - event: ModuleUninstalled(uint256 moduleTypeId, address mod)
       - event: RootValidatorUpdated(bytes21 rootValidator)
+field_selection:
+  transaction_fields:
+    - transactionIndex
+    - hash
+    - from
 networks:
   - id: 1
     start_block: 0
