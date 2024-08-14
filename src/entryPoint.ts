@@ -77,7 +77,7 @@ async function handleUserOperationEvent(
     blockNumber: event.block.number,
     blockTimestamp: event.block.timestamp,
     // @ts-ignore
-    transactionIndex: 0,
+    transactionIndex: event.transaction.transactionIndex,
     // @ts-ignore
     transactionHash: event.transaction.hash,
     hash,
