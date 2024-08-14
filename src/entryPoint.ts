@@ -65,16 +65,15 @@ async function handleUserOperationEvent(
   context: handlerContext
 ) {
   const hash = event.params.userOpHash;
-  const bundler = "0x0000000000000000000000000000000000000000";
+  const bundler = event.transaction.from.toLowerCase();
 
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
     chainId: event.chainId,
     blockNumber: event.block.number,
     blockTimestamp: event.block.timestamp,
-    transactionIndex: 0,
-    transactionHash:
-      "0x0000000000000000000000000000000000000000000000000000000000000000",
+    transactionIndex: event.transaction.transactionIndex,
+    transactionHash: event.transaction.hash,
     hash,
     actualGasCost: event.params.actualGasCost,
     actualGasUsed: event.params.actualGasUsed,
