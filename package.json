@@ -10,7 +10,7 @@
     "start": "ts-node generated/src/Index.bs.js"
   },
   "dependencies": {
-    "envio": "^2.0.1",
+    "envio": "^2.1.0",
     "ethers": "^6.13.2"
   },
   "devDependencies": {
