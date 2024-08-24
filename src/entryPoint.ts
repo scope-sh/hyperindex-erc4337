@@ -65,7 +65,9 @@ async function handleUserOperationEvent(
   context: handlerContext
 ) {
   const hash = event.params.userOpHash;
-  const bundler = event.transaction.from.toLowerCase();
+  const bundler = event.transaction.from
+    ? event.transaction.from.toLowerCase()
+    : undefined;
 
   context.UserOp.set({
     id: `${event.chainId}-${hash}`,
