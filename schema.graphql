@@ -1,11 +1,3 @@
-type KernelV3Account {
-  id: ID!
-  chainId: Int!
-  address: String!
-  rootValidator: String
-  modules: [String!]!
-}
-
 type UserOp {
   id: ID!
   chainId: Int!
