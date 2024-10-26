@@ -1,5 +1,5 @@
-name: ERC7579 Indexer
-description: ERC7579 Account and Module Indexer
+name: ERC4337 Indexer
+description: ERC4337 Account and Module Indexer
 contracts:
   - name: EntryPointV0_6_0
     abi_file_path: ./abi/entryPointV0_6_0.json
