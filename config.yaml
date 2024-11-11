@@ -18,6 +18,7 @@ field_selection:
     - transactionIndex
     - hash
     - from
+unordered_multichain_mode: true
 networks:
   - id: 1
     start_block: 0
