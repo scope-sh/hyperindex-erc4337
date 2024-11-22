@@ -19,7 +19,6 @@ field_selection:
     - hash
     - from
 unordered_multichain_mode: true
-rollback_on_reorg: false
 networks:
   - id: 1
     start_block: 0
