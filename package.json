@@ -10,13 +10,11 @@
     "start": "ts-node generated/src/Index.bs.js"
   },
   "dependencies": {
-    "envio": "^2.9.1",
-    "ethers": "^6.13.4"
+    "envio": "^2.9.1"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
-    "@types/ws": "^8.5.12",
+    "@types/node": "^22.10.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.7.2"
   }
 }

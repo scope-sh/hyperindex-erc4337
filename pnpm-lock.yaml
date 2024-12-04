@@ -9,24 +9,18 @@ importers:
   .:
     dependencies:
       envio:
-        specifier: ^2.7.3
-        version: 2.7.5(typescript@5.6.2)
-      ethers:
-        specifier: ^6.13.4
-        version: 6.13.4
+        specifier: ^2.9.1
+        version: 2.9.1(typescript@5.7.2)
     devDependencies:
       '@types/node':
-        specifier: ^22.5.4
-        version: 22.7.4
-      '@types/ws':
-        specifier: ^8.5.12
-        version: 8.5.12
+        specifier: ^22.10.1
+        version: 22.10.1
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.7.4)(typescript@5.6.2)
+        version: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
       typescript:
-        specifier: ^5.6.2
-        version: 5.6.2
+        specifier: ^5.7.2
+        version: 5.7.2
 
   generated:
     dependencies:
@@ -42,9 +36,6 @@ importers:
       '@rescript/react':
         specifier: 0.12.1
         version: 0.12.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@ryyppy/rescript-promise':
-        specifier: 2.1.0
-        version: 2.1.0
       bignumber.js:
         specifier: 9.1.2
         version: 9.1.2
@@ -95,19 +86,16 @@ importers:
         version: 11.1.3
       rescript-envsafe:
         specifier: 4.2.0
-        version: 4.2.0(rescript-schema@8.2.0(rescript@11.1.3))(rescript@11.1.3)
-      rescript-express:
-        specifier: 0.4.1
-        version: 0.4.1(express@4.19.2)
+        version: 4.2.0(rescript-schema@8.1.0(rescript@11.1.3))(rescript@11.1.3)
       rescript-schema:
-        specifier: 8.2.0
-        version: 8.2.0(rescript@11.1.3)
+        specifier: 8.1.0
+        version: 8.1.0(rescript@11.1.3)
       root:
         specifier: ../.
         version: link:..
       viem:
         specifier: 2.21.0
-        version: 2.21.0(typescript@5.6.2)
+        version: 2.21.0(typescript@5.7.2)
       yargs:
         specifier: 17.7.2
         version: 17.7.2
@@ -116,9 +104,6 @@ packages:
 
   '@adraffy/ens-normalize@1.10.0':
     resolution: {integrity: sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==}
-
-  '@adraffy/ens-normalize@1.10.1':
-    resolution: {integrity: sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -209,9 +194,6 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  '@ryyppy/rescript-promise@2.1.0':
-    resolution: {integrity: sha512-+dW6msBrj2Lr2hbEMX+HoWCvN89qVjl94RwbYWJgHQuj8jm/izdPC0YzxgpGoEFdeAEW2sOozoLcYHxT6o5WXQ==}
-
   '@scure/base@1.1.6':
     resolution: {integrity: sha512-ok9AWwhcgYuGG3Zfhyqg+zwl+Wn5uE+dwC0NV/2qQkx4dABbb/bx96vWu8NSj+BNjjSjno+JRYRjle1jV08k3g==}
 
@@ -236,14 +218,8 @@ packages:
   '@types/node@18.15.13':
     resolution: {integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==}
 
-  '@types/node@22.7.4':
-    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
-
-  '@types/node@22.7.5':
-    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
-
-  '@types/ws@8.5.12':
-    resolution: {integrity: sha512-3tPRkv1EtkDpzlgyKyI8pGsGZAGPEaXeu0DOj5DI25Ja91bdAYddYHbADRYVrZMRbfW+1l5YwXVDKohDJNQxkQ==}
+  '@types/node@22.10.1':
+    resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
 
   '@types/yoga-layout@1.9.2':
     resolution: {integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==}
@@ -465,28 +441,28 @@ packages:
   end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
 
-  envio-darwin-arm64@2.7.5:
-    resolution: {integrity: sha512-vmVc5Y8fBuJ/YU/rSIXAZjgh3nK2HemmfSoZvu1e3wSEuoZs+1EYkUT5vqvU//ULfOSKlpKWd/gGJb8Ls8izUg==}
+  envio-darwin-arm64@2.9.1:
+    resolution: {integrity: sha512-+GoexdCs6fpStPasIujwid/am22oBPznhjrJpqA59CVeLOsq+2JkK838e+aGjJ3KDF3o85o2m7U9P3HigMRHQQ==}
     cpu: [arm64]
     os: [darwin]
 
-  envio-darwin-x64@2.7.5:
-    resolution: {integrity: sha512-XwAbRqO4pdnwkeo15cAWsztTQwaaB9HKYs5kLBSyYRP/vILa3D64S5pZSSo7BWFZAkLhDRctiX4bxy5REbMEdw==}
+  envio-darwin-x64@2.9.1:
+    resolution: {integrity: sha512-UUffOGr/+Wt79C06wec6PlvYUc2EC6PAIo/Ou29RPjpkb/GH/j4MRFlNOgtX1i0ch6q34zW2Ik+4DSWTC9/b2A==}
     cpu: [x64]
     os: [darwin]
 
-  envio-linux-arm64@2.7.5:
-    resolution: {integrity: sha512-kQF5QmuFx5jE1qidZmcXOonDoWXG/MlZ2AGGAhjBjSY5Q7+OnXew1lHAZblO6wOlSYfYJCDK9E4LbTJMsg4S2Q==}
+  envio-linux-arm64@2.9.1:
+    resolution: {integrity: sha512-V8DQWDKnJoq4UdjYb6FHL6lbakmGE4IrHWzAd/SYYZMKLGz/2r/VeU0dJZXUDgPIH1Rp3KaxcLVm6IFpsFokXw==}
     cpu: [arm64]
     os: [linux]
 
-  envio-linux-x64@2.7.5:
-    resolution: {integrity: sha512-+xf+WUKvQFZk0lpoZHssPkzWtDMosbzOpenMcdP+M9CUZCHiY1qsBPUfhgGjR/7HEvCzKTz4Im1I/lZCbploAg==}
+  envio-linux-x64@2.9.1:
+    resolution: {integrity: sha512-YQSHl68pWJBqFY+p+B3FGfiMtr9w61UOM5Uu3QxlRRiD+Su/zYT/pRBRynKQ2PYuVNjkEFt3NkB7qWWU3Rf26A==}
     cpu: [x64]
     os: [linux]
 
-  envio@2.7.5:
-    resolution: {integrity: sha512-eLyo0L8QHrZp3yMFkkLke6TAeSdBEPyXleWvuwQx7mTzgtRIOSgy+Xn+PWOZ/KvnRtenkFipEVVsXeN/wo21dw==}
+  envio@2.9.1:
+    resolution: {integrity: sha512-n4vw+DjuHaTn0v787Ml6Qqn4iqNgMbyFMHrB5/GFYniGH5xc/IU8cnUp9KC7UQg49+H5iIav74HDgK8FlEUxpg==}
     hasBin: true
 
   es-define-property@1.0.0:
@@ -511,10 +487,6 @@ packages:
   etag@1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
-
-  ethers@6.13.4:
-    resolution: {integrity: sha512-21YtnZVg4/zKkCQPjrDj38B1r4nQvTZLopUGMLQ1ePU2zV/joCfDC3t3iKQjWRzjjjbzR+mdAIoikeBRNkdllA==}
-    engines: {node: '>=14.0.0'}
 
   ethers@6.8.0:
     resolution: {integrity: sha512-zrFbmQRlraM+cU5mE4CZTLBurZTs2gdp2ld0nG/f3ecBK+x6lZ69KSxBqZ4NjclxwfTxl5LeNufcBbMsTdY53Q==}
@@ -977,13 +949,8 @@ packages:
       rescript: 11.x
       rescript-schema: 6.x || 7.x || 8.x
 
-  rescript-express@0.4.1:
-    resolution: {integrity: sha512-R+xAQKANfIFAIcxhQrkLn58IZQwhMZuQpVCH6UtTRNLWqlVtaogG9z4Rt0MQZgqYOjvrOtt51P0hOmYGg/90Fw==}
-    peerDependencies:
-      express: ^4.17.1
-
-  rescript-schema@8.2.0:
-    resolution: {integrity: sha512-pfRNB9kvafUYe+RgvsExiazJioi/iV8gmjK3xOw/jeSgPIIDoVhflnmpoz+vuiwlulYkNT/7u2+2EsCrph7QKA==}
+  rescript-schema@8.1.0:
+    resolution: {integrity: sha512-syU4Wvy2tJzBKkqa8ad1yYSDIh8EoKGUsZv6Wa0YpERqb7H6Kemtc6zU+BxIghahzShb6L7RMfVNuKC48KluIg==}
     peerDependencies:
       rescript: 11.x
 
@@ -1115,9 +1082,6 @@ packages:
   tslib@2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
 
-  tslib@2.7.0:
-    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
-
   type-fest@0.12.0:
     resolution: {integrity: sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==}
     engines: {node: '>=10'}
@@ -1130,13 +1094,13 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  typescript@5.6.2:
-    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
@@ -1261,8 +1225,6 @@ snapshots:
 
   '@adraffy/ens-normalize@1.10.0': {}
 
-  '@adraffy/ens-normalize@1.10.1': {}
-
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
@@ -1335,8 +1297,6 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@ryyppy/rescript-promise@2.1.0': {}
-
   '@scure/base@1.1.6': {}
 
   '@scure/bip32@1.4.0':
@@ -1360,23 +1320,15 @@ snapshots:
 
   '@types/node@18.15.13': {}
 
-  '@types/node@22.7.4':
+  '@types/node@22.10.1':
     dependencies:
-      undici-types: 6.19.8
-
-  '@types/node@22.7.5':
-    dependencies:
-      undici-types: 6.19.8
-
-  '@types/ws@8.5.12':
-    dependencies:
-      '@types/node': 22.7.4
+      undici-types: 6.20.0
 
   '@types/yoga-layout@1.9.2': {}
 
-  abitype@1.0.5(typescript@5.6.2):
+  abitype@1.0.5(typescript@5.7.2):
     optionalDependencies:
-      typescript: 5.6.2
+      typescript: 5.7.2
 
   abort-controller@3.0.0:
     dependencies:
@@ -1559,29 +1511,29 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  envio-darwin-arm64@2.7.5:
+  envio-darwin-arm64@2.9.1:
     optional: true
 
-  envio-darwin-x64@2.7.5:
+  envio-darwin-x64@2.9.1:
     optional: true
 
-  envio-linux-arm64@2.7.5:
+  envio-linux-arm64@2.9.1:
     optional: true
 
-  envio-linux-x64@2.7.5:
+  envio-linux-x64@2.9.1:
     optional: true
 
-  envio@2.7.5(typescript@5.6.2):
+  envio@2.9.1(typescript@5.7.2):
     dependencies:
       '@envio-dev/hypersync-client': 0.6.2
       rescript: 11.1.3
-      rescript-schema: 8.2.0(rescript@11.1.3)
-      viem: 2.21.0(typescript@5.6.2)
+      rescript-schema: 8.1.0(rescript@11.1.3)
+      viem: 2.21.0(typescript@5.7.2)
     optionalDependencies:
-      envio-darwin-arm64: 2.7.5
-      envio-darwin-x64: 2.7.5
-      envio-linux-arm64: 2.7.5
-      envio-linux-x64: 2.7.5
+      envio-darwin-arm64: 2.9.1
+      envio-darwin-x64: 2.9.1
+      envio-linux-arm64: 2.9.1
+      envio-linux-x64: 2.9.1
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -1601,19 +1553,6 @@ snapshots:
   escape-string-regexp@2.0.0: {}
 
   etag@1.8.1: {}
-
-  ethers@6.13.4:
-    dependencies:
-      '@adraffy/ens-normalize': 1.10.1
-      '@noble/curves': 1.2.0
-      '@noble/hashes': 1.3.2
-      '@types/node': 22.7.5
-      aes-js: 4.0.0-beta.5
-      tslib: 2.7.0
-      ws: 8.17.1
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
 
   ethers@6.8.0:
     dependencies:
@@ -2048,16 +1987,12 @@ snapshots:
 
   require-directory@2.1.1: {}
 
-  rescript-envsafe@4.2.0(rescript-schema@8.2.0(rescript@11.1.3))(rescript@11.1.3):
+  rescript-envsafe@4.2.0(rescript-schema@8.1.0(rescript@11.1.3))(rescript@11.1.3):
     dependencies:
       rescript: 11.1.3
-      rescript-schema: 8.2.0(rescript@11.1.3)
+      rescript-schema: 8.1.0(rescript@11.1.3)
 
-  rescript-express@0.4.1(express@4.19.2):
-    dependencies:
-      express: 4.19.2
-
-  rescript-schema@8.2.0(rescript@11.1.3):
+  rescript-schema@8.1.0(rescript@11.1.3):
     dependencies:
       rescript: 11.1.3
 
@@ -2188,27 +2123,25 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  ts-node@10.9.2(@types/node@22.7.4)(typescript@5.6.2):
+  ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.7.4
+      '@types/node': 22.10.1
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 5.6.2
+      typescript: 5.7.2
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
   tslib@2.4.0: {}
-
-  tslib@2.7.0: {}
 
   type-fest@0.12.0: {}
 
@@ -2219,9 +2152,9 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  typescript@5.6.2: {}
+  typescript@5.7.2: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.20.0: {}
 
   unpipe@1.0.0: {}
 
@@ -2237,19 +2170,19 @@ snapshots:
 
   vary@1.1.2: {}
 
-  viem@2.21.0(typescript@5.6.2):
+  viem@2.21.0(typescript@5.7.2):
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.4.0
       '@noble/hashes': 1.4.0
       '@scure/bip32': 1.4.0
       '@scure/bip39': 1.3.0
-      abitype: 1.0.5(typescript@5.6.2)
+      abitype: 1.0.5(typescript@5.7.2)
       isows: 1.0.4(ws@8.17.1)
       webauthn-p256: 0.0.5
       ws: 8.17.1
     optionalDependencies:
-      typescript: 5.6.2
+      typescript: 5.7.2
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
