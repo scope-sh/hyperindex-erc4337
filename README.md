@@ -20,9 +20,3 @@ To run the indexer locally:
 ```
 pnpm run dev
 ```
-
-## Related
-
-- [Scope UI](https://github.com/scope-sh/scope-app)
-- [Scope API](https://github.com/scope-sh/scope-api)
-- [Scope Registry](https://github.com/scope-sh/scope-registry)
