@@ -1,12 +1,6 @@
 name: ERC4337 Indexer
 description: ERC4337 Account and Module Indexer
 contracts:
-  - name: EntryPointV0_6_0
-    abi_file_path: ./abi/entryPointV0_6_0.json
-    handler: ./src/entryPoint.ts
-    events:
-      - event: UserOperationEvent(bytes32 indexed userOpHash, address indexed sender, address indexed paymaster, uint256 nonce, bool success, uint256 actualGasCost, uint256 actualGasUsed)
-      - event: AccountDeployed(bytes32 indexed userOpHash, address indexed sender, address factory, address paymaster)
   - name: EntryPointV0_7_0
     abi_file_path: ./abi/entryPointV0_7_0.json
     handler: ./src/entryPoint.ts
@@ -30,8 +24,6 @@ networks:
   - id: 1
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -39,8 +31,6 @@ networks:
   - id: 11155111
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -48,8 +38,6 @@ networks:
   - id: 10
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -57,8 +45,6 @@ networks:
   - id: 11155420
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -66,8 +52,6 @@ networks:
   - id: 137
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -77,8 +61,6 @@ networks:
       endpoint_url: "https://amoy.hypersync.xyz"
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -86,8 +68,6 @@ networks:
   - id: 8453
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -95,8 +75,6 @@ networks:
   - id: 84532
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -104,8 +82,6 @@ networks:
   - id: 42161
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -113,8 +89,6 @@ networks:
   - id: 421614
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -122,8 +96,6 @@ networks:
   - id: 34443
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -131,8 +103,6 @@ networks:
   - id: 59144
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -140,8 +110,6 @@ networks:
   - id: 42170
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -149,8 +117,6 @@ networks:
   - id: 42220
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -158,8 +124,6 @@ networks:
   - id: 43114
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -167,8 +131,6 @@ networks:
   - id: 43113
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -176,8 +138,6 @@ networks:
   - id: 100
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -185,8 +145,6 @@ networks:
   - id: 56
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
@@ -194,8 +152,6 @@ networks:
   - id: 10143
     start_block: 0
     contracts:
-      - name: EntryPointV0_6_0
-        address: "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789"
       - name: EntryPointV0_7_0
         address: "0x0000000071727de22e5e9d8baf0edac6f37da032"
       - name: EntryPointV0_8_0
